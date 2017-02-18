@@ -191,6 +191,15 @@ TARGET_USES_WCNSS_MAC_ADDR_REV := true
 BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
 BOARD_USES_CYANOGEN_HARDWARE := true
 
+# Enable dexpreopt to speed boot time
+ifeq ($(HOST_OS),linux)
+  ifeq ($(call match-word-in-list,$(TARGET_BUILD_VARIANT),user),true)
+    ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT := true
+    endif
+  endif
+endif
+
 # Twrp
 #RECOVERY_VARIANT := twrp
 ifeq ($(RECOVERY_VARIANT),twrp)
@@ -208,6 +217,7 @@ TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_NTFS_3G := true
 #TWRP_EVENT_LOGGING := true
 else
+USE_CLANG_PLATFORM_BUILD := true
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.qcom
 endif
 
