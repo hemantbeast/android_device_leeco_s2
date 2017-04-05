@@ -10,8 +10,8 @@
     "branch": "cm-14.x"
   },
   {
-    "repository": "TheMuppets/proprietary_vendor_leeco",
+    "repository": "AICP/proprietary_vendor_leeco",
     "target_path": "vendor/leeco",
-    "branch": "cm-14.1"
+    "branch": "n7.1"
   }
 ]
