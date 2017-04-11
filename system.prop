@@ -249,3 +249,6 @@ ro.device.gpu=Qualcomm Adreno 510
 ro.device.rear_cam=16 MP
 ro.device.front_cam=8 MP
 ro.device.screen_res=1080 x 1920 pixels
+
+# Volte
+persist.volte_enabled_by_hw=1
