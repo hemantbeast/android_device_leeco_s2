@@ -22,8 +22,6 @@
 
 #define BTM_DEF_LOCAL_NAME "LeEco Le 2"
 
-#define BT_CLEAN_TURN_ON_DISABLED 1
-
 #define MAX_ACL_CONNECTIONS    7
 #define MAX_L2CAP_CHANNELS    16
 
@@ -33,4 +31,5 @@
 #define BTA_BLE_SKIP_CONN_UPD  FALSE
 #define BTM_LE_SECURE_CONN  TRUE
 
+#define BT_CLEAN_TURN_ON_DISABLED TRUE
 #endif
