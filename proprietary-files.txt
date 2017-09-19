@@ -576,7 +576,6 @@ vendor/lib/libchromatix_ov16880_sunny_bahy_6c_cpp_hfr_90.so
 vendor/lib/libchromatix_ov16880_primax_bahy_6c_cpp_hfr_120.so
 vendor/lib/libmmQSM.so
 vendor/lib/libchromatix_ov16880_sunny_bahy_6c_cpp_us_chromatix.so
-vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/lib-rtpsl.so
 vendor/lib/libdpmnsrm.so
@@ -900,3 +899,6 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libqti-gt.so
 vendor/lib64/libEGL_adreno.so
 vendor/qcril.db
+
+# WideVine - from angler
+vendor/lib/mediadrm/libwvdrmengine.so|66ba66d047044f92eb0eada1faf6a5799ded90ab
