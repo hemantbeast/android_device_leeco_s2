@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.broadcastradio@1.0-impl \
+    android.hardware.soundtrigger@2.0-impl \
     audiod \
     audio.a2dp.default \
     audio.r_submix.default \
@@ -142,15 +146,18 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl \
     libbt-vendor
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
+    camera.device@3.2-impl \
+    android.hardware.camera.provider@2.4-impl \
+#    camera.msm8952.so \
     libqomx_core \
     libmmcamera_interface \
-    libmmjpeg_interface
-#    camera.msm8952.so \
+    libmmjpeg_interface \
+    Snap
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -160,8 +167,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CMActions
 
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.0-service
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl
+
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.mapper@2.0-impl \
+    android.hardware.memtrack@1.0-impl \
     gralloc.msm8952 \
     copybit.msm8952 \
     hwcomposer.msm8952 \
@@ -184,11 +204,21 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service \
     fingerprint.msm8952 \
     fingerprintd
 
+# Gatekeeper HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl
+
+# GNSS HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl
+
 # IR
 PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl \
     consumerir.msm8952
 
 PRODUCT_COPY_FILES += \
@@ -203,6 +233,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
+# Keymaster HAL
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl
+
 # Keystore
 PRODUCT_PACKAGES += \
     keystore.msm8952
@@ -215,6 +249,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
     lights.msm8952
 
 # GPS
@@ -264,11 +299,16 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl \
     power.qcom
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,${LOCAL_PATH}/rootdir,root)
+
+# RenderScript HAL
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -283,6 +323,9 @@ PRODUCT_BOOT_JARS += \
     telephony-ext
 
 # Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     $(LOCAL_PATH)/sensors/hals.conf:system/etc/sensors/hals.conf
@@ -293,14 +336,24 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl \
     thermanager
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermanager.xml:system/etc/thermanager.xml \
     $(LOCAL_PATH)/configs/thermanager_X526.xml:system/etc/thermanager_X526.xml
 
+# USB HAL
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl
+
 # Wifi
 PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
     hostapd \
     wificond \
     wpa_supplicant \
