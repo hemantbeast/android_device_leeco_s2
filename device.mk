@@ -157,10 +157,6 @@ PRODUCT_PACKAGES += \
     libmmjpeg_interface \
     Snap
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
 # CMActions
 PRODUCT_PACKAGES += \
     CMActions
