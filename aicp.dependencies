@@ -2,26 +2,26 @@
   {
     "repository": "LineageOS/android_device_qcom_common",
     "target_path": "device/qcom/common",
-    "branch": "cm-14.1"
+    "branch": "lineage-15.0"
   },
   {
     "repository": "hemantbeast/android_kernel_leeco_msm8976",
     "target_path": "kernel/leeco/msm8976",
-    "branch": "n7.1"
+    "branch": "o8.0"
   },
   {
     "repository": "AICP/proprietary_vendor_leeco",
     "target_path": "vendor/leeco",
-    "branch": "n7.1"
+    "branch": "o8.0"
   },
   {
     "repository": "LineageOS/android_hardware_sony_thermanager",
     "target_path": "hardware/sony/thermanager",
-    "branch": "cm-14.1"
+    "branch": "lineage-15.0"
   },
   {
     "repository": "LineageOS/android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings",
-    "branch": "cm-14.1"
+    "branch": "lineage-15.0"
   }
 ]
