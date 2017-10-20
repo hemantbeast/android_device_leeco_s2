@@ -9,7 +9,8 @@ include $(CLEAR_VARS)
 LOCAL_SHARED_LIBRARIES := \
     libutils \
     libcutils \
-    liblog
+    liblog \
+    libandroid_runtime
 
 LOCAL_SRC_FILES += \
     loc_log.cpp \
@@ -32,8 +33,6 @@ LOCAL_CFLAGS += \
 ifeq ($(TARGET_BUILD_VARIANT),user)
    LOCAL_CFLAGS += -DTARGET_BUILD_VARIANT_USER
 endif
-
-LOCAL_LDFLAGS += -Wl,--export-dynamic
 
 ## Includes
 LOCAL_C_INCLUDES:= \
