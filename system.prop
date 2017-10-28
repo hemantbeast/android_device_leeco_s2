@@ -267,3 +267,10 @@ ro.device.screen_res=1080 x 1920 pixels
 
 # Volte
 persist.volte_enabled_by_hw=1
+
+# ADB
+ro.secure=0
+ro.adb.secure=0
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=adb
