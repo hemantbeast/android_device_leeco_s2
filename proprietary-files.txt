@@ -19,7 +19,7 @@ bin/adsprpcd
 bin/sensors.qcom
 bin/hvdcp_opti
 bin/dpm
-bin/cnd
+bin/cnd|f2bebcda9b804e3ef71805b47485c4bde2ef22a3
 bin/yepdiag
 bin/rmt_storage
 bin/irsc_util
@@ -44,14 +44,14 @@ bin/port-bridge
 bin/xtwifi-inet-agent
 -framework/qcnvitems.jar
 -framework/com.qti.location.sdk.jar
--framework/com.quicinc.cne.jar
+-framework/com.quicinc.cne.jar|8551df50dec7bf2c07f342032d45c400b2568e5c
 -framework/cneapiclient.jar
 -framework/imscmlibrary.jar
 -framework/izat.xt.srv.jar
 -framework/qcrilhook.jar
 -framework/rcsimssettings.jar
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk
--priv-app/CNEService/CNEService.apk
+-priv-app/CNEService/CNEService.apk|0facc91810fa46454e26eafb89fba3cd3ef75a78
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 lib/libarcimgutils.so
 lib/libmm-omxcore.so
@@ -240,7 +240,8 @@ vendor/lib/libmmcamera_ov8865_sunny_ffhy_20.so
 vendor/lib/libchromatix_ov8865_ofilm_ffhy_20_hfr_120_dw9714.so
 vendor/lib/libmmcamera2_imglib_modules.so
 vendor/lib/libmmcamera_isp_linearization40.so
-vendor/lib/libcneapiclient.so
+vendor/lib/libcneapiclient.so|925e274a9559fe308b65a1bf6c8d5dc1430cbfde
+vendor/lib/libprotobuf-cpp-fuck.so|5b2819a3cf1866cdcc700ba24307b8ccb3e81ce3
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libmmcamera2_vpe_module.so
@@ -409,7 +410,7 @@ vendor/lib/libwfdcommonutils.so
 vendor/lib/libchromatix_ov16880_sunny_bahy_6c_hfr_60_ak7371.so
 vendor/lib/libchromatix_ov16880_primax_bahy_6c_cpp_hfr_90.so
 vendor/lib/libaudcal.so
-vendor/lib/libwms.so
+vendor/lib/libwms.so|743633701da9fcf03ef9f60a341444d8aaf2c62f
 vendor/lib/libmm-disp-apis.so
 vendor/lib/libvendorconn.so
 vendor/lib/libchromatix_ov8865_sunny_ffhy_20_video_full.so
@@ -598,7 +599,7 @@ vendor/lib/lib-imsrcscmclient.so
 vendor/lib/libchromatix_ov8865_ofilm_ffhy_20_default_video.so
 vendor/lib/libidl.so
 vendor/lib/libmmipstreamsourcehttp.so
-vendor/lib/libwqe.so
+vendor/lib/libwqe.so|06fe7998a68e0725329f3482bc6a1f2162d45d73
 vendor/lib/libactuator_ak7371_ov16880_primax.so
 vendor/lib/libchromatix_ov16880_primax_bahy_6c_preview.so
 vendor/lib/libmmcamera_tintless_algo.so
@@ -645,7 +646,7 @@ vendor/lib/libdrmfs.so
 vendor/lib/libOmxMux.so
 vendor/lib/libchromatix_ov16880_sunny_bahy_6c_liveshot.so
 vendor/lib/libchromatix_ov8865_sunny_ffhy_20_cpp_ds_chromatix.so
-vendor/lib/libcne.so
+vendor/lib/libcne.so|784284e68410b90bd01fac3759ae8d04a9cd2385
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libchromatix_ov16880_primax_bahy_6c_common_night.so
 vendor/lib/libmmcamera2_frame_algorithm.so
@@ -676,7 +677,7 @@ vendor/lib64/lib-rtpcommon.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libmmparser_lite.so
 vendor/lib64/libdisp-aba.so
-vendor/lib64/libcneapiclient.so
+vendor/lib64/libcneapiclient.so|9b87511cf7586125f8428094db183374f73cfa43
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqdp.so
@@ -757,7 +758,7 @@ vendor/lib64/libsecureui.so
 vendor/lib64/lib-imsvt.so
 vendor/lib64/libwfdcommonutils.so
 vendor/lib64/libaudcal.so
-vendor/lib64/libwms.so
+vendor/lib64/libwms.so|616596607972209753fdbb71753029253789fba7455
 vendor/lib64/libmm-disp-apis.so
 vendor/lib64/libvendorconn.so
 vendor/lib64/libxml.so
@@ -861,7 +862,7 @@ vendor/lib64/libqti-at.so
 vendor/lib64/lib-imsrcscmclient.so
 vendor/lib64/libidl.so
 vendor/lib64/libmmipstreamsourcehttp.so
-vendor/lib64/libwqe.so
+vendor/lib64/libwqe.so|f8ca2d4146695b8da426aa98dd22393fa5eb5642
 vendor/lib64/libTimeService.so
 vendor/lib64/lib-rcsjni.so
 vendor/lib64/libmmwfdsrcinterface.so
@@ -886,7 +887,7 @@ vendor/lib64/libwfduibcsrcinterface.so
 vendor/lib64/libconnctrl.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libOmxMux.so
-vendor/lib64/libcne.so
+vendor/lib64/libcne.so|fc7836bc06083a36888242deedd391278dfb475f
 vendor/lib64/libmmcamera2_frame_algorithm.so
 vendor/lib64/libExtendedExtractor.so
 -vendor/lib64/libthermalclient.so
@@ -899,4 +900,5 @@ vendor/lib64/libasn1crtx.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libqti-gt.so
 vendor/lib64/libEGL_adreno.so
+vendor/lib64/libprotobuf-cpp-fuck.so|55b3d41f310398c4629e789065aab514baddc13d
 vendor/qcril.db
