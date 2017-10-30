@@ -240,7 +240,6 @@ PRODUCT_PACKAGES += \
 # Libshims
 PRODUCT_PACKAGES += \
     libshims_camera \
-    libshims_cameraservice \
     libshims_ims \
     rild_socket
 
