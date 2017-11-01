@@ -157,10 +157,6 @@ PRODUCT_PACKAGES += \
     libmmjpeg_interface \
     Snap
 
-# CMActions
-PRODUCT_PACKAGES += \
-    CMActions
-
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
@@ -211,6 +207,13 @@ PRODUCT_PACKAGES += \
 # GNSS HAL
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@1.0-impl \
+    android.hardware.health@1.0-convert \
+    android.hardware.health@1.0-service \
+    android.hardware.health@1.0
 
 # IR
 PRODUCT_PACKAGES += \
