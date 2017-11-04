@@ -253,7 +253,8 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8952 \
-    libcurl
+    libcurl \
+    libshims_get_process_name
 
 PRODUCT_PACKAGES += \
     flp.conf \
