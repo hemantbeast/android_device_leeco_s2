@@ -241,7 +241,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshims_camera \
     libshims_ims \
-    rild_socket
+    libshims_rild_socket
 
 # Lights
 PRODUCT_PACKAGES += \
