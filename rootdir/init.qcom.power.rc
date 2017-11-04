@@ -39,5 +39,5 @@ on charger
 
 service charger /charger -c
     class charger
-    critical
+    group system graphics
     seclabel u:r:charger:s0
