@@ -566,7 +566,6 @@ vendor/lib/libchromatix_ov8865_ofilm_ffhy_20_cpp_hfr_120.so
 vendor/lib/libmmsw_platform.so
 vendor/lib/hw/vulkan.msm8952.so
 vendor/lib/hw/activity_recognition.msm8952.so
-vendor/lib/hw/sound_trigger.primary.msm8952.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libchromatix_ov8865_ofilm_ffhy_20_hfr_120.so
 vendor/lib/libQtiTether.so
@@ -581,7 +580,6 @@ vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/lib-rtpsl.so
 vendor/lib/libdpmnsrm.so
-vendor/lib/libsmwrapper.so
 vendor/lib/libOmxAlacDec.so
 vendor/lib/lib-rtpcore.so
 -vendor/lib/libimsmedia_jni.so
