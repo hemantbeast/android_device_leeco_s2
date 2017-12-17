@@ -313,7 +313,6 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     librmnetctl \
     libxml2 \
-    libqsap_sdk \
     telephony-ext \
     libminui
 
@@ -357,13 +356,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
+    libwpa_client \
     wificond \
+    wifilogd \
     wpa_supplicant \
-    wpa_supplicant.conf
-
-PRODUCT_PACKAGES += \
-    p2p_supplicant_overlay.conf \
-    wpa_supplicant_overlay.conf
+    wpa_supplicant.conf \
+    wcnss_service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
@@ -374,10 +372,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     WCNSS_wlan_dictionary.dat
-
-PRODUCT_PACKAGES += \
-    libQWiFiSoftApCfg \
-    wcnss_service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/vendor/etc/wifi/WCNSS_cfg.dat \
