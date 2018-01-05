@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configuration
 $(call inherit-product, device/leeco/s2/full_s2.mk)
 
-# Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := s2
-PRODUCT_NAME := aicp_s2
+PRODUCT_NAME := lineage_s2
 PRODUCT_BRAND := LeEco
 PRODUCT_MANUFACTURER := LeMobile
 
@@ -42,10 +42,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 TARGET_VENDOR := leeco
 
-# AICP Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Hemant Sharma (hemantbeast)"
-
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.model
 
 # Release name
@@ -54,4 +50,3 @@ PRODUCT_RELEASE_NAME := s2
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
--include vendor/aicp/configs/bootanimation.mk
