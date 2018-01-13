@@ -167,7 +167,7 @@ on post-fs-data
     chmod 666 /sys/class/power_supply/battery/le_quick_charge_mode
 
 # start camera server as daemon
-service qcamerasvr /system/bin/mm-qcamera-daemon
+service qcamerasvr /vendor/bin/mm-qcamera-daemon
     class late_start
     user camera
     group camera system inet input graphics
@@ -187,7 +187,7 @@ on property:persist.usb.chgdisabled=1
 on property:persist.usb.chgdisabled=0
     write /sys/class/power_supply/battery/charging_enabled 1
 
-service qseecomd /system/bin/qseecomd
+service qseecomd /vendor/bin/qseecomd
    class core
    user root
    group root
@@ -197,7 +197,7 @@ service perfd /system/vendor/bin/perfd
    user root
    disabled
 
-service time_daemon /system/bin/time_daemon
+service time_daemon /vendor/bin/time_daemon
    class late_start
    user root
    group root
@@ -264,12 +264,12 @@ service adsprpcd /system/bin/adsprpcd
     user media
     group media
 
-service hvdcp_opti /system/bin/hvdcp_opti
+service hvdcp_opti /vendor/bin/hvdcp_opti
     class main
     user root
     group root
 
-service per_mgr /system/bin/pm-service
+service per_mgr /vendor/bin/pm-service
     class core
     user system
     group system net_raw
@@ -280,16 +280,16 @@ service qcom-serialno-sh /system/bin/sh /init.s2.serialno.sh
     oneshot
     disabled
 
-service yep_qmi_server /system/bin/yep_qmi_server
+service yep_qmi_server /vendor/bin/yep_qmi_server
     class core
     user root
     seclabel u:r:yep_qmi_server:s0
 
-service fingerprintd /system/bin/fingerprintd
+service fingerprintd /vendor/bin/fingerprintd
     class late_start
     user system
 
-service gx_fpd /system/bin/gx_fpd
+service gx_fpd /vendor/bin/gx_fpd
     class late_start
     user root
     group root system
