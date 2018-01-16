@@ -274,6 +274,12 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/vendor/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/vendor/etc/media_codecs_google_video.xml
 
+# Netutils
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0 \
+    android.system.net.netd@1.0 \
+    libandroid_net
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
