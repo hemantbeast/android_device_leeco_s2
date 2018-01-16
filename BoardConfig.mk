@@ -223,6 +223,9 @@ USE_OPENGL_RENDERER := true
 #BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 #include device/qcom/sepolicy/sepolicy.mk
 
+# SDClang
+TARGET_USE_SDCLANG := true
+
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := s2,le_s2,le_s2_ww
 
