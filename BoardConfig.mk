@@ -186,9 +186,6 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 TARGET_USES_WCNSS_MAC_ADDR_REV := true
 
-# Lineage hardware
-BOARD_HARDWARE_CLASS += $(LOCAL_PATH)/lineagehw
-
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
