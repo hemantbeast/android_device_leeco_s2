@@ -156,10 +156,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-# CMActions
-PRODUCT_PACKAGES += \
-    CMActions
-
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
@@ -245,7 +241,6 @@ PRODUCT_PACKAGES += \
 # Libshims
 PRODUCT_PACKAGES += \
     libshims_camera \
-    libshims_cameraservice \
     libshims_ims
 
 # Lights
